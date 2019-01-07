@@ -1,5 +1,7 @@
-setwd('/Users/andrea/Documents/Programming/R/TimeSeries')
+install.packages('astsa')
 library(astsa)
+
+# ========= CHAPTER 6.2, P332 - KF SMOOTHING, FILTERING, FORECAST 
 
 # state model
 # mu_t = mu_t-1 + w_t
@@ -23,6 +25,8 @@ lines(y, col = 'red')
 
 # -------- filter and smooth
 ?Ksmooth0
+Ksmooth0
+?Kfilter0
 # kalman filter and smoother, time invariant model without inputs
 # (number of obs, data, time invariate obs matrix, 
 #  initla state mean vector, cov mat, state transition mat
